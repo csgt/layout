@@ -1,0 +1,16 @@
+{
+  "name": "csgt/layout",
+  "description": "Layout AdminLTE",
+  "authors": [
+      {
+          "name": "CSMacbook",
+          "email": "jgalindo@cs.com.gt"
+      }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Csgt\\Layout\\": "src"
+    }
+  },
+}
