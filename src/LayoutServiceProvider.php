@@ -18,9 +18,5 @@ class LayoutServiceProvider extends ServiceProvider {
     $this->commands([
       Console\MakeLayoutCommand::class
     ]);
-
-    config([
-      'config/config.php',
-    ]);
   }
 }

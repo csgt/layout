@@ -1,0 +1,10 @@
+<?php
+
+return [	
+	'cerrarsesion'     => 'Sign out',
+	'perfil'           => 'Profile',
+	'menu'             => 'MENU',
+	'status'           => 'Online',
+	'footer-izquierda' => 'All rights reserved.',
+	'footer-derecha'   => '',
+];
