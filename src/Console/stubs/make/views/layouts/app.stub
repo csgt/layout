@@ -239,9 +239,7 @@
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu">
         <li class="header">{{trans('menu.menu')}}</li>
-        
         {!!Session::get('menu')!!}
-
       </ul>
       <!-- /.sidebar-menu -->
     </section>
@@ -360,6 +358,7 @@
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/app.min.js"></script>
+  <script src="/js/menu.js"></script>
 
 	@if(isset($templateincludes))
 		@if(in_array('datetimepicker', $templateincludes))
