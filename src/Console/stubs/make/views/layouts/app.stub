@@ -179,7 +179,9 @@
 
                 <p>
                   {{$nombreMenu}}
+                  @if(Auth::check())
                   <small>{{implode(", ", Auth::user()->authroles()->orderBy('nombre')->pluck('nombre')->toArray())}}</small>
+                  @endif
                 </p>
               </li>
               @if(config('csgtlayout.show.usuario-acciones', false))
@@ -382,5 +384,6 @@
 			<script src="/js/summernote.min.js"></script>
 		@endif
 	@endif
+  @yield('javascript')
 </body>
 </html>
