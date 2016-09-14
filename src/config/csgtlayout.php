@@ -5,11 +5,11 @@ return [
 	| Skin
 	|--------------------------------------------------------------------------
 	|
-	| Skin a utilizar por default.  skin-XXXXX
+	| Skin LTE a utilizar por default.  skin-XXXXX
 	|
 	*/
 
-	'adminlte-skin' => 'skin-black',
+	'adminlte-skin' => 'skin-blue',
 
 	'show' => [
 			'right-sidebar'    => false,

@@ -77,3 +77,12 @@ html {
 .bs-callout-success h4 {
   color: #3c763d;
 }
+.fa-sm{
+  font-size: 9px;
+}
+.icon-dark{
+  color:#222d32;
+}
+.color-white{
+  color:#fff;
+}
