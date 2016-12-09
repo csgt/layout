@@ -264,6 +264,12 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
+    @if(session()->has('message'))
+      <div id="alert-message" class="alert alert-{!! session('type','warning') !!} alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><span aria-hidden="true">&times;</span></button>
+        {!! session('message') !!}
+      </div>
+    @endif
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -372,6 +378,13 @@
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/app.min.js"></script>
   <script src="/js/menu.js"></script>
+  @if(session()->has('message'))
+    <script>
+      $(document).ready(function(){
+        $("#alert-message").delay(8000).fadeOut('slow');
+      });
+    </script>
+  @endif
 
 	@if(isset($templateincludes))
 		@if(in_array('datetimepicker', $templateincludes))
