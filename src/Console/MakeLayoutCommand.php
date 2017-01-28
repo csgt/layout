@@ -3,10 +3,8 @@
 namespace Csgt\Layout\Console;
 
 use Illuminate\Console\Command;
-use Illuminate\Console\AppNamespaceDetectorTrait;
 
 class MakeLayoutCommand extends Command {
-  use AppNamespaceDetectorTrait;
 
   protected $signature = 'make:csgtlayout';
 
