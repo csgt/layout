@@ -63,6 +63,6 @@ class MakeLayoutCommand extends Command {
   }
 
   protected function getAppNamespace(){
-    return 'App\'';
+    return 'App\\';
   }
 }
