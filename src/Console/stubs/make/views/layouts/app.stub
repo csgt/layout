@@ -377,6 +377,7 @@
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/app.min.js"></script>
+  <script src="/js/adminlte-toolbar-remember.js"></script>
   <script src="/js/menu.js"></script>
   @if(session()->has('message'))
     <script>
