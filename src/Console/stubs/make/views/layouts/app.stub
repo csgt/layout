@@ -280,7 +280,7 @@
     </section>
 
     <!-- Main content -->
-    <section class="content">
+    <section class="content" id="app">
       @yield('content')
     </section>
     <!-- /.content -->
@@ -376,8 +376,6 @@
 </div>
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/app.min.js"></script>
-  <script src="/js/adminlte-toolbar-remember.js"></script>
   <script src="/js/menu.js"></script>
   @if(session()->has('message'))
     <script>
@@ -408,7 +406,17 @@
 		@if(in_array('summernote', $templateincludes))
 			<script src="/js/summernote.min.js"></script>
 		@endif
+    @if(in_array('vue', $templateincludes))
+      @if(isset($datavue))
+        <script>
+          var datavue = {!! json_encode($datavue, JSON_PRETTY_PRINT) !!};
+        </script>
+      @endif
+      <script src="{{mix('/js/app.js')}}"></script>
+    @endif
 	@endif
+  <script src="/js/adminlte.min.js"></script>
+  <script src="/js/adminlte-toolbar-remember.js"></script>
   @yield('javascript')
 </body>
 </html>
