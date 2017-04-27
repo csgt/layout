@@ -211,7 +211,7 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">{{trans('menu.perfil')}}</a>
+                  <a href="/perfil" class="btn btn-default btn-flat">{{trans('menu.perfil')}}</a>
                 </div>
                 <div class="pull-right">
                   <a href="/logout" class="btn btn-default btn-flat">{{trans('menu.cerrarsesion')}}</a>
@@ -294,7 +294,7 @@
       {{trans('menu.footer-derecha')}}
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2016 <a href="https://cs.com.gt" target="_blank">Compuservice, S.A.</a>.</strong> {{trans('menu.footer-izquierda')}}
+    <strong>Copyright &copy; {{date('Y')==2017?'2017':'2017-' . date('Y')}} <a href="https://cs.com.gt" target="_blank">Compuservice, S.A.</a>.</strong> {{trans('menu.footer-izquierda')}}
   </footer>
 
   @if(config('csgtlayout.show.right-sidebar', false))
