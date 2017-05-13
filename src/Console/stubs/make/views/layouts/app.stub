@@ -8,7 +8,7 @@
 	<meta name="author" content="Compuservice">
 	<meta name="csrf-token" content="{{csrf_token()}}">
 	
-	<title>Nombre Aplicacion L5</title>
+	<title>{{config('app.name')}}</title>
 	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="/css/font-awesome.min.css">
 	<link type="text/css" rel="stylesheet" href="/css/AdminLTE.min.css">
