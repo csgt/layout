@@ -22,7 +22,6 @@ class MakeLayoutCommand extends Command {
 
   public function fire() {
     $origen = __DIR__ . "/public";
-    //dd($origen);
     $this->recurse_copy($origen, public_path());
     $this->exportViews();
     $this->exportLangs();
