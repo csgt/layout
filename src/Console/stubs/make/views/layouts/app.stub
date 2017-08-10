@@ -234,7 +234,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel">
         <div class="pull-left image">
-          @if(Auth::check)
+          @if(Auth::check())
           <img src="data:image/png;base64,{{Auth::user()->avatar}}" class="img-circle" alt="Usuario">
           @endif    
         </div>
