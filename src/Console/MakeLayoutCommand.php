@@ -20,7 +20,7 @@ class MakeLayoutCommand extends Command {
     'en/menu.stub' => 'en/menu.php',
   ];
 
-  public function fire() {
+  public function handle() {
     $origen = __DIR__ . "/public";
     $this->recurse_copy($origen, public_path());
     $this->exportViews();
@@ -41,7 +41,7 @@ class MakeLayoutCommand extends Command {
       }
     }
     closedir($dir);
-  } 
+  }
 
   protected function exportViews() {
     foreach ($this->views as $key => $value) {
