@@ -7,7 +7,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="Compuservice">
 	<meta name="csrf-token" content="{{csrf_token()}}">
-	
+
 	<title>{{config('app.name')}}</title>
 	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="/css/font-awesome.min.css">
@@ -236,7 +236,7 @@
         <div class="pull-left image">
           @if(Auth::check())
           <img src="data:image/png;base64,{{Auth::user()->avatar}}" class="img-circle" alt="Usuario">
-          @endif    
+          @endif
         </div>
         <div class="pull-left info">
           <p>{{$nombreMenu}}</p>
@@ -370,6 +370,11 @@
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
   <script src="/js/menu.js"></script>
+  <script>
+    if (self != top) {
+      top.location = self.location;
+    }
+  </script>
   @if(session()->has('message'))
     <script>
       $(document).ready(function(){
