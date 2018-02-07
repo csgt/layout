@@ -13,5 +13,12 @@
       "Csgt\\Layout\\": "src"
     }
   },
-  "minimum-stability" : "stable"
+  "minimum-stability" : "stable",
+   "extra": {
+        "laravel": {
+            "providers": [
+                "Csgt\\Layout\\LayoutServiceProvider"
+            ]
+        }
+    }
 }
